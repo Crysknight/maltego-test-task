@@ -1,0 +1,9 @@
+How to set this up:
+
+- navigate to /front folder
+- npm i
+- npm run build
+- navigate to /back folder
+- npm i
+- npm run serve
+- open http://localhost:5000 and enjoy

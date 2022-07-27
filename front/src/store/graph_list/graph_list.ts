@@ -69,6 +69,8 @@ export class GraphList extends AbstractStore {
             return;
         }
 
+        this.setSearch('');
+
         try {
             const response = await this.axiosInstance.post('/graphs', graphCreate);
             if (response.data) {

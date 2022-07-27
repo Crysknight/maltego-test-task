@@ -12,7 +12,7 @@ node_modules
 
 # production
 build
-build-front
+back/static
 
 # misc
 .DS_Store
