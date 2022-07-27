@@ -1,0 +1,19 @@
+.mtt-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+    &__content {
+        padding: 30px;
+        border-radius: 8px;
+        background-color: white;
+        cursor: default;
+    }
+}

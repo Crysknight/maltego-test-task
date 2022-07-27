@@ -45,7 +45,7 @@
         }
     },     {
         "id": "grph_3",
-        "name": "Graph 3",
+        "name": "Node 3",
         "data": {
             "nodes": [{
                 "id": "nd_1",

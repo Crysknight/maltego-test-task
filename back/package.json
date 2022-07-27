@@ -6,11 +6,12 @@
   "scripts": {
     "compile": "tsc && tsc-alias -p tsconfig.json && node ./build/back/src/index.js",
     "serve": "rimraf ./build && nodemon -e ts  --exec \"npm run compile\"",
-    "fuck": "rimraf ./.git"
+    "what": "tsc --traceResolution"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fastify/cors": "^8.0.0",
     "@types/node": "^18.6.1",
     "fastify": "^4.3.0",
     "nodemon": "^2.0.19",

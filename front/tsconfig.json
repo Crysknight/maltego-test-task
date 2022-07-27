@@ -6,6 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
+    "rootDir": "../",
+    "baseUrl": "./",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,11 +18,11 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    }
+  }
 }

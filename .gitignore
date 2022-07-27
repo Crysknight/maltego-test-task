@@ -24,3 +24,6 @@ build-front
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# I don't know why it does this (compile into the same folder), but let's assume it can be fixed in a real environment
+shared/**/*.js

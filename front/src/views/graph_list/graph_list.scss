@@ -1,0 +1,25 @@
+.mtt-graph-list {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+    .mtt-graph-list-search {
+        margin-bottom: 15px;
+    }
+
+    .mtt-graph-list-item {
+        margin-bottom: 20px;
+    }
+
+    &__new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        padding: 0 30px;
+        border-radius: 12px;
+        background-color: rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+    }
+}

@@ -9,3 +9,5 @@ export interface IGraph {
         edges: Array<IGraphEdge>;
     };
 };
+
+export type IGraphCreate = Pick<IGraph, 'name'>;

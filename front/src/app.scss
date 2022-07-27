@@ -1,0 +1,72 @@
+.mtt-app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: center;
+    font-size: 16px;
+    background-color: #312d2e;
+    color: #202020;
+}
+
+.mtt-app-navigation-toggle {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 24px;
+    z-index: 10;
+
+    @media (max-width: 1300px) {
+        display: block;
+    }
+}
+
+.mtt-app-navigation {
+    height: 100vh;
+    width: 240px;
+    flex: 0 0 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 0;
+    background-color: #dddcdc;
+    z-index: 5;
+
+    @media (max-width: 1300px) {
+        position: absolute;
+        left: -240px;
+        top: 0;
+        padding: 90px 0 30px;
+        transition: left 0.25s;
+
+        &--opened {
+            left: 0px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: #202020;
+        white-space: pre-wrap;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.mtt-app-content {
+    height: 100vh;
+    width: 100%;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
